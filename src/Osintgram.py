@@ -605,7 +605,7 @@ class Osintgram:
         if self.writeFile:
             file_name = self.output_dir + "/" + self.target + "_likes.txt"
             file = open(file_name, "w")
-            file.write(str(like_counter) + " likes in " + str(like_counter) + " posts\n")
+            file.write(str(like_counter) + " likes in " + str(posts) + " posts\n")
             file.close()
 
         if self.jsonDump:
