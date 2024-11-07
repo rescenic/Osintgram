@@ -611,7 +611,7 @@ class Osintgram:
         if self.jsonDump:
             json_data = {
                 'like_counter': like_counter,
-                'posts': like_counter
+                'posts': posts
             }
             json_file_name = self.output_dir + "/" + self.target + "_likes.json"
             with open(json_file_name, 'w') as f:
